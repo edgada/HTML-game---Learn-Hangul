@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css); 
+</style> 
+<link rel="stylesheet" type="text/css" href="stilius.css">
+<script src="http://code.jquery.com/jquery-latest.min.js "></script>
+<script>
+          $(document).ready(function() {
+              reset();
+			  document.getElementById('vowels').style.color = "#f7c200";
+          });
+        </script>
+</head>
+<body>
+
+<div id="container">
+	<div id="virsus">
+		<div id="virsusKaire">100% &nbsp;&nbsp;&nbsp; 10/10</div><div id="virsusDesine" align="right"><div id="resetMygtukas">Reset</div></div>
+	</div>
+	<div class="juosta"></div>
+	<div id="rodinys">
+		
+	</div>
+	<div id="atsakymas">
+		
+	</div>
+	<div id="mygtukuJuosta">
+		<div class="mygtukas" id="1">1</div>&nbsp;
+		<div class="mygtukas" id="2">2</div>&nbsp;
+		<div class="mygtukas" id="3">3</div>&nbsp;
+		<div class="mygtukas" id="4">4</div>&nbsp;
+		<div class="mygtukas" id="5">5</div>
+	</div>
+	<div class="juosta"></div>
+	<div id="meniuJuosta">
+		<div id="meniuKaire">
+			<div class="meniuMygtukas" id="vowels">Vowels</div>
+			<div class="meniuMygtukas" id="consonants">Consonants</div>
+		</div><div id="meniuVidurys"><div class="meniuSpalvosMygtukas"><a href="https://play.google.com/store/apps/details?id=appinventor.ai_edsoftapps.Learn_Korean" target="_blank"><img src="getit.jpg"></a></div></div><div id="meniuDesine" align="right">
+			<p><div class="meniuMygtukas" id="basic">Basic set</div></p>
+			<div class="meniuMygtukas" id="full">Full set</div>
+		</div>
+	</div>
+</div>
+<script src="scriptas.js"></script>
+<script>
+document.getElementById('resetMygtukas').style.cursor = 'pointer';
+document.getElementById('resetMygtukas').onclick = function() {
+   reset();
+};
+
+document.getElementById('1').style.cursor = 'pointer';
+document.getElementById('1').onclick = function() {
+   pasirinkau(1);
+};
+document.getElementById('2').style.cursor = 'pointer';
+document.getElementById('2').onclick = function() {
+   pasirinkau(2);
+};
+document.getElementById('3').style.cursor = 'pointer';
+document.getElementById('3').onclick = function() {
+   pasirinkau(3);
+};
+document.getElementById('4').style.cursor = 'pointer';
+document.getElementById('4').onclick = function() {
+   pasirinkau(4);
+};
+document.getElementById('5').style.cursor = 'pointer';
+document.getElementById('5').onclick = function() {
+   pasirinkau(5);
+};
+
+document.getElementById('vowels').style.cursor = 'pointer';
+document.getElementById('vowels').onclick = function() {
+   rezimas = 10;
+   document.getElementById('vowels').style.color = "#f7c200";
+   document.getElementById('consonants').style.color = "white";
+   document.getElementById('basic').style.color = "white";
+   document.getElementById('full').style.color = "white";
+   document.getElementById('rodinys').style.fontSize = "180px";
+   reset();
+};
+document.getElementById('consonants').style.cursor = 'pointer';
+document.getElementById('consonants').onclick = function() {
+   rezimas = 14;
+   document.getElementById('consonants').style.color = "#f7c200";
+   document.getElementById('vowels').style.color = "white";
+   document.getElementById('basic').style.color = "white";
+   document.getElementById('full').style.color = "white";
+   document.getElementById('rodinys').style.fontSize = "180px";
+   reset();
+};
+document.getElementById('basic').style.cursor = 'pointer';
+document.getElementById('basic').onclick = function() {
+   rezimas = 24;
+   document.getElementById('basic').style.color = "#f7c200";
+   document.getElementById('vowels').style.color = "white";
+   document.getElementById('consonants').style.color = "white";
+   document.getElementById('full').style.color = "white";
+   document.getElementById('rodinys').style.fontSize = "180px";
+   reset();
+};
+document.getElementById('full').style.cursor = 'pointer';
+document.getElementById('full').onclick = function() {
+   rezimas = 51;
+   document.getElementById('full').style.color = "#f7c200";
+   document.getElementById('vowels').style.color = "white";
+   document.getElementById('consonants').style.color = "white";
+   document.getElementById('basic').style.color = "white";
+   document.getElementById('rodinys').style.fontSize = "180px";
+   reset();
+};
+</script>
+</body>
+</html>
